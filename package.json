@@ -2,9 +2,9 @@
   "name": "sf-crud",
   "version": "1.0.0",
   "private": true,
-  "engines": { "node": ">=18" },
+  "engines": { "node": "22.x" },
   "scripts": {
-    "build": "npm --prefix client install && npm --prefix client run build",
+    "build": "npm --prefix client install --include=dev && npm --prefix client run build",
     "start": "node server.js"
   },
   "dependencies": {

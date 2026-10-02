@@ -1,15 +1,9 @@
 {
-  "name": "sf-crud",
+  "name": "sf-crud-client",
   "version": "1.0.0",
   "private": true,
-  "engines": { "node": "22.x" },
-  "scripts": {
-    "build": "npm --prefix client install --include=dev && npm --prefix client run build",
-    "start": "node server.js"
-  },
-  "dependencies": {
-    "dotenv": "^16.4.5",
-    "express": "^4.19.2",
-    "express-session": "^1.18.0"
-  }
+  "type": "module",
+  "scripts": { "build": "vite build" },
+  "dependencies": { "react": "^18.3.1", "react-dom": "^18.3.1" },
+  "devDependencies": { "@vitejs/plugin-react": "^4.3.1", "vite": "^5.4.0" }
 }
